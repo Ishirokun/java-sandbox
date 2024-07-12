@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Pallindrome {
 
     /**
-     * Removes common punctuation marks, symbols and spaces.
+     * Trims and removes common punctuation marks, symbols and spaces.
      * 
      * List of removed characters:
      * ['.', ',', '!', ';', ':', '&', ' ']
@@ -13,7 +13,8 @@ public class Pallindrome {
      */
     public static String isolateLetters(String string){
         String result;
-        result = string.replace(".", "");
+        result = string.trim();
+        result = result.replace(".", "");
         result = result.replace(",", "");
         result = result.replace("!", "");
         result = result.replace(";", "");
