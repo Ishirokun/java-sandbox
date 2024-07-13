@@ -1,6 +1,10 @@
-import java.sql.Date;
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.time.Month;
 import java.util.List;
+import java.util.Scanner;
+
+
 
 
 /**
@@ -8,7 +12,9 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        
+        System.out.println("Enter a string:");
+        var word = new StringBuilder(new Scanner(System.in).nextLine().replaceAll("[,\\s!&;:]", "").toLowerCase());
+        System.out.println((word == word.reverse()) ? "Pallindrome" : "Not Pallindrome");
     }
 }
 
