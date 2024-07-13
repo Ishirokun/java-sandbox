@@ -2,9 +2,8 @@ import java.util.Scanner;
 
 public class Pallindrome {
     public static void main(String[] args) {
-        System.out.println("Enter a string ");
-        String word = new Scanner(System.in).nextLine().replaceAll("[,\\s!&;:]", "");
-        if (word.equalsIgnoreCase(new StringBuilder(word).reverse().toString())) System.out.println("Pallindrome");
-        else System.out.println("Not Pallindrome");
+        System.out.println("Enter a string:");
+        var word = new StringBuilder(new Scanner(System.in).nextLine().replaceAll("[,\\s!&;:]", "").toLowerCase());
+        System.out.println((word == word.reverse()) ? "Pallindrome" : "Not Pallindrome");
     }
 }
