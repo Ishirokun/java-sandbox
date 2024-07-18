@@ -25,6 +25,7 @@ public class NumberEvaluator {
             } catch (InputMismatchException e) {
                 System.out.println("That's not even a valid number you silly!");
             }
+            input.close();
         }
     
 }

@@ -31,5 +31,6 @@ public class Statements {
         else if (a == b && b == c){
             System.out.println("All numbers are equal.");
         }
+        input.close();
     }
 }

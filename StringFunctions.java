@@ -20,6 +20,7 @@ public class StringFunctions {
         if (x.length() > 5){
             System.out.println("The second character of the string is '" + x.charAt(1) + "' and the fifth character of the string is '" + x.charAt(4) + "'");
         }
+        input.close();
     }
 
 }
