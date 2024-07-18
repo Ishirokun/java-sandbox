@@ -57,5 +57,6 @@ public class ArithmeticMethods {
             System.out.println("Difference : " + difference(x, y));
             System.out.println("Product : " + product(x, y));
             System.out.println("Quotient : " + quotient(x, y));
+            input.close();
     }
 }
