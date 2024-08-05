@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Main {
     Main(){
-
+        System.out.println("Test");
     }
 }
 
